@@ -9,7 +9,10 @@ import { PrincingSection } from "@/sections/PrincingSection";
 import Projects from "@/sections/Projects";
 import Stats from "@/sections/Stats";
 import {Button} from "@heroui/button";
+import { BsWhatsapp } from "react-icons/bs";
 export default function Home() {
+  const msg = 'Estou interessado na Gesolar Invest!!!'
+
   return (
   <div className="flex w-full flex-col bg-[#000]">
     <main>
@@ -37,6 +40,12 @@ export default function Home() {
       <PrincingSection />
 
       <AboutUsSection />
+
+      <div className="fixed inset-x-0 bottom-0 flex items-center justify-center m-4">
+        <a href={`http://api.whatsapp.com/send?phone=5511970695992&text=${encodeURIComponent(msg)}`} target='_blank' className="flex items-center justify-center gap-4 bg-orange-400 px-6 py-2 text-zinc-50 font-semibold rounded-full">
+          Quero Investir <BsWhatsapp className="text-xl"/>
+        </a>
+      </div>
     </main>
 
     <Footer />

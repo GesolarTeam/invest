@@ -10,10 +10,10 @@ import { fontSans } from "@/config/fonts";
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    default: 'GESOLAR Invest',
+    template: '',
   },
-  description: siteConfig.description,
+  description: '',
   icons: {
     icon: "/favicon.ico",
   },
