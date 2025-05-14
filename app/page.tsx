@@ -42,7 +42,12 @@ export default function Home() {
       <AboutUsSection />
 
       <div className="fixed inset-x-0 bottom-0 flex items-center justify-center m-4">
-        <a href={`http://api.whatsapp.com/send?phone=5511970695992&text=${encodeURIComponent(msg)}`} target='_blank' className="flex items-center justify-center gap-4 bg-orange-400 px-6 py-2 text-zinc-50 font-semibold rounded-full">
+        <a 
+          href={`http://api.whatsapp.com/send?phone=5511970695992&text=${encodeURIComponent(msg)}`} 
+          target="_blank"
+          rel="noreferrer" 
+          className="flex items-center justify-center gap-4 bg-orange-400 px-6 py-2 text-zinc-50 font-semibold rounded-full"
+        >
           Quero Investir <BsWhatsapp className="text-xl"/>
         </a>
       </div>
